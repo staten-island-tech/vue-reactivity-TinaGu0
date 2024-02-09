@@ -1,10 +1,13 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
-  <h1>hi</h1>
+  <div>
+
+  </div>
 </template>
+
+<script setup>
+import { Snapshots } from "./components/SnapshotArr";
+
+</script>
 
 <style scoped>
 
