@@ -143,3 +143,5 @@ const snapshots = [
         ],
     },
 ];
+
+export { snapshots };

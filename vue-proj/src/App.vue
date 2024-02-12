@@ -1,11 +1,13 @@
 <template>
   <div>
-
+    <h1>hello</h1>
   </div>
 </template>
 
 <script setup>
-import { Snapshots } from "./components/SnapshotArr";
+import { RouterLink, RouterView } from 'vue-router'
+import { snapshots } from "./components/SnapshotArr";
+console.log(snapshots);
 
 </script>
 
