@@ -6,6 +6,7 @@
 
 <script setup>
   import ProductCard from '@/components/ProductCard.vue';
+  import { snapshots } from '../components/SnapshotArr';
 
 </script>
 
@@ -13,5 +14,8 @@
 .parent {
   display: flex;
   flex-direction: column;
+  background-color: rgb(233, 236, 223);
+  width: 100%;
+  height: 50vw;
 }
 </style>

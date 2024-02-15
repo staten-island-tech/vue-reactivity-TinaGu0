@@ -1,19 +1,18 @@
 <template>
-    <div class="product"> 
-        <h2>{{ah}}</h2>
+    <div> 
+        <h2>{{ a }}</h2>
     </div>
 </template>
 
 <script setup>
 import { snapshots } from './SnapshotArr';
-let ah = snapshots.forEach((a) => snapshots.name)
+let a="hi"
 </script>
 
 <style scoped>
 
 .product {
     width: 20%;
-    background-color: antiquewhite;
     height: 30%;
 }
 </style>
