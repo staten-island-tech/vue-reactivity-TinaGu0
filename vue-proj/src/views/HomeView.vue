@@ -1,6 +1,10 @@
 <template>
   <div>
-    <ProductCard class="parent"/>
+    <ProductCard class="parent"
+     v-for="snapshots in snapshots" 
+     :key="snapshots.name"
+     :snapshots = "snapshots"
+     />
   </div>
 </template>
 
@@ -12,10 +16,9 @@
 
 <style scoped>
 .parent {
-  display: flex;
-  flex-direction: column;
   background-color: rgb(233, 236, 223);
   width: 100%;
   height: 50vw;
+  margin-bottom: 30vw;
 }
 </style>

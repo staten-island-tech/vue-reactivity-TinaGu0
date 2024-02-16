@@ -1,12 +1,10 @@
 <template>
-    <div> 
-        <h2>{{ a }}</h2>
-    </div>
+    <p>{{ snapshots.name }}</p>
 </template>
 
 <script setup>
 import { snapshots } from './SnapshotArr';
-let a="hi"
+// snapshots.forEach((name) => console.log(name.name));
 </script>
 
 <style scoped>
