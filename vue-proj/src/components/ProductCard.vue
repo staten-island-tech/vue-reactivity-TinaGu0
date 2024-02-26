@@ -1,16 +1,14 @@
 <template>
-    <p>{{ snapshots.name }}</p>
+    <p>{{ Snapshot.name }}</p>
 </template>
 
 <script setup>
-import { snapshots } from './SnapshotArr';
-// snapshots.forEach((name) => console.log(name.name));
+const props = defineProps({
+    Snapshot: Object,
+});
+
 </script>
 
 <style scoped>
 
-.product {
-    width: 20%;
-    height: 30%;
-}
 </style>
