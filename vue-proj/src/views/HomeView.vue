@@ -10,6 +10,10 @@
 <script setup>
   import ProductCard from '@/components/ProductCard.vue';
   import { snapshots } from '@/components/SnapshotArr';
+  
+  const props = defineProps({
+    Snapshot: Object,
+});
 
 </script>
 
@@ -17,12 +21,15 @@
 .card {
   background-color: rgb(233, 236, 223);
   width: 30%;
-  height: 50vw;
-  margin-right: 50%;
+  height: 20vw;
+  margin-right: 10%;
+  padding-right: 10vw;
+  display: flexbox;
 }
 
 .parent { 
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  flex-flow: row wrap;
 }
 </style>

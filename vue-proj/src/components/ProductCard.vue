@@ -1,8 +1,9 @@
 <template>
-    <p>{{ Snapshot.name }}</p>
+    <h2>{{ Snapshot.name }}</h2>
 </template>
 
 <script setup>
+
 const props = defineProps({
     Snapshot: Object,
 });
