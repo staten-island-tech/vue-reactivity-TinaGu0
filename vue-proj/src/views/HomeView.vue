@@ -10,10 +10,6 @@
 <script setup>
   import ProductCard from '@/components/ProductCard.vue';
   import { snapshots } from '@/components/SnapshotArr';
-  
-  const props = defineProps({
-    Snapshot: Object,
-});
 
 </script>
 

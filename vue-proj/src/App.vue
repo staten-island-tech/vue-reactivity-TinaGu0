@@ -9,6 +9,8 @@
 import { snapshots } from "./components/SnapshotArr";
 import HomeView from './views/HomeView.vue';
 
+
+
 </script>
 
 <style scoped>
