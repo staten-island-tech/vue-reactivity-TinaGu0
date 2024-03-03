@@ -2,13 +2,12 @@
     <div class="item">
         <h2>{{ Snapshot.name }}</h2>
         <img v-bind:src="Snapshot.img" class="img"/>
-        <BuyItem />
+        <BuyItem :Snapshot="snapshots"/>
     </div>
 </template>
 
 <script>
 import BuyItem from './BuyItem.vue';
-
 
 export default { 
     name: "ProductCard",
@@ -17,7 +16,7 @@ export default {
     },
     props: {
         Snapshot: Object,
-    }
+    },
 };
 
 

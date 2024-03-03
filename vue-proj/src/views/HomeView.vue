@@ -10,17 +10,19 @@
 
 <script>
   import ProductCard from '../components/ProductCard.vue';
-  import { snapshots } from '../components/SnapshotArr';
+  import { snapshots } from '@/components/SnapshotArr';
+
 
   export default { 
     name: "HomeView",
+    props: {
+      Snapshot: Object,
+      snapshots: Array, 
+     },
     components: { 
       ProductCard,
      },
-     props: {
-     }
 };
-
 
 </script>
 
@@ -32,4 +34,4 @@
   flex-flow: row wrap;
 }
 
-</style>
+</style>./SnapshotArr../components/SnapshotArr
