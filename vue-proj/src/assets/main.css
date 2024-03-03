@@ -1,9 +1,12 @@
-#cards {
-    background-color: antiquewhite;
-    padding-bottom: 20%;
-}
+body {
+    background-color: var(--beige)}
 
-#topBar {
-    background-color: rgb(255, 254, 254);
-    padding-bottom: 5%;
+:root {
+    --purple: #6C5B7B;
+    --peach: #F8B195;
+    --pink: #F67280;
+    --lavender: #C06C84;
+    --blue: #355C7D;
+    --beige: #e2cfbc;
+    --white: #FFF;
 }

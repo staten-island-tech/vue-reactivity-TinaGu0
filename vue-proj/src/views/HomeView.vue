@@ -1,6 +1,7 @@
 <template>
+  <h1 class="center">Buy snapshot cards + gambling n stuff</h1>
   <div class="parent">
-    <ProductCard class="card" v-for="snapshot in snapshots" 
+    <ProductCard v-for="snapshot in snapshots" 
      :key="snapshot.name"
      :Snapshot = "snapshot"
      />
@@ -11,21 +12,15 @@
   import ProductCard from '@/components/ProductCard.vue';
   import { snapshots } from '@/components/SnapshotArr';
 
+
 </script>
 
 <style scoped>
-.card {
-  background-color: rgb(233, 236, 223);
-  width: 30%;
-  height: 20vw;
-  margin-right: 10%;
-  padding-right: 10vw;
-  display: flexbox;
-}
 
 .parent { 
   display: flex;
   width: 100%;
   flex-flow: row wrap;
 }
+
 </style>
