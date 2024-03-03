@@ -6,12 +6,20 @@
     </div>
 </template>
 
-<script setup>
+<script>
 import BuyItem from './BuyItem.vue';
 
-const props = defineProps({
-    Snapshot: Object,
-});
+
+export default { 
+    name: "ProductCard",
+    components: { 
+        BuyItem, 
+    },
+    props: {
+        Snapshot: Object,
+    }
+};
+
 
 </script>
 

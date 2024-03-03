@@ -1,15 +1,20 @@
 <template>
     <div>
-        <input type="button" v-bind:value="Snapshot.price" class="btn"/>
+        <button class="coolButton">{{ Snapshot.price }}</button>
     </div>
 </template>
 
-<script setup>
+<script>
 import ProductCard from './ProductCard.vue';
 
-const props = defineProps({
-    Snapshot: Object,
-});
+export default { 
+    name: "BuyItem",
+    components: {},
+    props: {
+        Snapshot: Object,
+    }
+};
+
 
 </script>
 

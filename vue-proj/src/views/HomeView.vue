@@ -8,9 +8,18 @@
   </div>
 </template>
 
-<script setup>
-  import ProductCard from '@/components/ProductCard.vue';
-  import { snapshots } from '@/components/SnapshotArr';
+<script>
+  import ProductCard from '../components/ProductCard.vue';
+  import { snapshots } from '../components/SnapshotArr';
+
+  export default { 
+    name: "HomeView",
+    components: { 
+      ProductCard,
+     },
+     props: {
+     }
+};
 
 
 </script>
