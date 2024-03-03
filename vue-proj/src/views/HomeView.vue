@@ -1,5 +1,5 @@
 <template>
-  <h1 class="center">Buy snapshot cards + gambling n stuff</h1>
+  <h1 class="center">Buy snapshot cards</h1>
   <div class="parent">
     <ProductCard v-for="snapshot in snapshots" 
      :key="snapshot.name"
@@ -12,17 +12,15 @@
   import ProductCard from '../components/ProductCard.vue';
   import { snapshots } from '@/components/SnapshotArr';
 
+export default {
+  name: "HomeView", 
+  components: { ProductCard }, 
+  props: {
+    snapshots: Array, 
+    Snapshot: Object,
+  }
 
-  export default { 
-    name: "HomeView",
-    props: {
-      Snapshot: Object,
-      snapshots: Array, 
-     },
-    components: { 
-      ProductCard,
-     },
-};
+}
 
 </script>
 

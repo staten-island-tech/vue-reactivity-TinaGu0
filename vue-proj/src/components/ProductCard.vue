@@ -2,7 +2,7 @@
     <div class="item">
         <h2>{{ Snapshot.name }}</h2>
         <img v-bind:src="Snapshot.img" class="img"/>
-        <BuyItem :Snapshot="snapshots"/>
+        <BuyItem />
     </div>
 </template>
 
@@ -22,7 +22,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style>
 .item {
   background-color: var(--white);
   width: 30vw;
