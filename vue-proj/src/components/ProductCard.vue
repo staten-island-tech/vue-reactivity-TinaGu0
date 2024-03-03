@@ -1,8 +1,9 @@
 <template>
     <div class="item">
-        <h2>{{ Snapshot.name }}</h2>
-        <img v-bind:src="Snapshot.img" class="img"/>
-        <BuyItem />
+        <h2>{{ snapshot.name }}</h2>
+        <img :src="snapshot.img" class="img"/>
+        <p>${{ snapshot.price }}</p>
+        <BuyItem :snapshot="snapshot" />
     </div>
 </template>
 
@@ -15,11 +16,9 @@ export default {
         BuyItem, 
     },
     props: {
-        Snapshot: Object,
-    },
+        snapshot: Object,
+    }
 };
-
-
 </script>
 
 <style>

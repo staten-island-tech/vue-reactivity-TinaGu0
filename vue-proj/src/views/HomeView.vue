@@ -3,33 +3,30 @@
   <div class="parent">
     <ProductCard v-for="snapshot in snapshots" 
      :key="snapshot.name"
-     :Snapshot = "snapshot"
+     :snapshot="snapshot"
      />
   </div>
 </template>
 
-<script>
-  import ProductCard from '../components/ProductCard.vue';
-  import { snapshots } from './SnapshotArr';
+<script> 
+import ProductCard from '../components/ProductCard.vue';
 
-export default {
-  name: "HomeView", 
-  components: { ProductCard }, 
+export default { 
+  name: "HomeView",
+  components: { 
+    ProductCard,
+  },
   props: {
-    snapshots: Array, 
-    Snapshot: Object,
+    snapshots: Array,
+    snapshot: Object,
   }
-
-}
-
+};
 </script>
 
 <style scoped>
-
 .parent { 
   display: flex;
   width: 100%;
   flex-flow: row wrap;
 }
-
 </style>
