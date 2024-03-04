@@ -4,14 +4,13 @@
     <button class="btn" @click="goGacha">Gacha</button>
   </section>
   <RouterView></RouterView>
-  <div>
-    <HomeView :snapshots="snapshots" />
-  </div>
 </template>
 
 <script>
-import HomeView from './views/HomeView.vue';
+import HomeView from './components/HomeView.vue';
 import { snapshots } from './views/SnapshotArr';
+import { items } from './views/ArrayStuff.js'
+console.log(snapshots)
 
 export default {
   name: "App",
@@ -23,13 +22,15 @@ export default {
   },
   methods: {
     goStore() {
-      this.$router.push({path: '/HomeView'})
+      this.$router.push({path: '/StoreFront'})
     },
     goGacha() {
-      this.$router.push({path: '/GachaScreen'})
+      this.$router.push({path: '/GachaScreen'});
+      console.log(items)
     }
   }
 };
+
 </script>
 
 <style scoped>
@@ -42,7 +43,7 @@ export default {
 .btn {
   width: 20%;
   height: 3vw;
-  background: transparent;
+  background: var(--white);
   border-radius: 5px;
   margin-right: 40%;
 }

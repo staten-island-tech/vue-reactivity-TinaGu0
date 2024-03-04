@@ -25,9 +25,11 @@ export default {
     methods: {
         add() {
             console.log(this.snapshot.name);
-            let bought = snapshots.filter(item => item.name == this.snapshot.name)
-            items.push(bought)
-            console.log(bought)
+            //let bought = snapshots.filter(item => item.name == this.snapshot.name)
+            let boughtName = this.snapshot.name
+            let boughtCards = this.snapshot.cards
+            items.push({name: boughtName, cards: boughtCards})
+            console.log(items)
         }
     }
 };

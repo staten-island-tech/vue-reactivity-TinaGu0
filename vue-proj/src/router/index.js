@@ -1,14 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import StoreFront from "../views/StoreFront.vue"
 import GachaScreen from '../views/GachaScreen.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/HomeView',
+      path: '/StoreFront',
       name: 'home',
-      component: HomeView
+      component: StoreFront
     },
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
@@ -16,7 +16,7 @@ const router = createRouter({
       {
         path: '/GachaScreen',
         name: 'gacha',
-        component: GachaScreen // Use the GachaScreen component for the "about" route
+        component: GachaScreen
       }
   ]
 })

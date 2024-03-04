@@ -1,7 +1,7 @@
 <template>
     <div class="item">
         <h2>{{ snapshot.name }}</h2>
-        <img :src="snapshot.img" class="img"/>
+        <img v-bind:src="snapshot.img" class="img"/>
         <p>${{ snapshot.price }}</p>
         <BuyItem :snapshot="snapshot" />
     </div>
