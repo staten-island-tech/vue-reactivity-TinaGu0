@@ -4,7 +4,13 @@ import GachaScreen from '../views/GachaScreen.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+
   routes: [
+    {
+      path: '/', //will show on page load
+      name: 'default',
+      component: StoreFront
+    },
     {
       path: '/StoreFront',
       name: 'home',

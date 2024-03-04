@@ -10,7 +10,6 @@
 import HomeView from './components/HomeView.vue';
 import { snapshots } from './views/SnapshotArr';
 import { items } from './views/ArrayStuff.js'
-console.log(snapshots)
 
 export default {
   name: "App",
@@ -41,10 +40,11 @@ export default {
 }
 
 .btn {
-  width: 20%;
+  width: 40%;
   height: 3vw;
   background: var(--white);
   border-radius: 5px;
   margin-right: 40%;
+  margin-left: 30%;
 }
 </style>

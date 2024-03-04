@@ -1,6 +1,6 @@
 <template>
   <div class="bg">
-<h2>Store</h2>
+<h1>Store</h1>
   <div>
     <HomeView :snapshots="snapshots" />
   </div>
@@ -30,6 +30,7 @@ import { snapshots } from './SnapshotArr';
 <style scoped>
 .bg {
   background-color: rgba(255, 255, 255, 0.7);
-  margin-right: 2vw;
+  margin-right: 3vw;
+  margin-left: 3vw;
 }
 </style>

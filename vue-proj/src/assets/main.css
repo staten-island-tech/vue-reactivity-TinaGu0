@@ -10,3 +10,7 @@ body {
     --beige: #e2cfbc;
     --white: #FFF;
 }
+
+h1 {
+    text-align: center;
+}

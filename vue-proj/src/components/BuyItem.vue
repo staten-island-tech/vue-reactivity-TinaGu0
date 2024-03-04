@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button class="coolButton" @click="spent++, add()">Purchase</button>
+        <button @click="spent++, add()">Purchase</button>
         <p>Amount Purchased: {{ spent }}</p>
     </div>
 </template>
@@ -38,6 +38,5 @@ export default {
 
 </script>
 
-<style lang="scss" >
-
+<style >
 </style>

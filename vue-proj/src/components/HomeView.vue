@@ -28,5 +28,8 @@
     display: flex;
     width: 100%;
     flex-flow: row wrap;
+    text-align: center;
+    align-items: center;
+    margin-left: 7%;
   }
   </style>

@@ -1,7 +1,7 @@
 <template>
-    <div class="item">
+    <div class="card">
         <h2>{{ snapshot.name }}</h2>
-        <img v-bind:src="snapshot.img" class="img"/>
+        <img v-bind:src="snapshot.img" class="img" :alt="snapshot.name"/>
         <p>${{ snapshot.price }}</p>
         <BuyItem :snapshot="snapshot" />
     </div>
@@ -22,12 +22,15 @@ export default {
 </script>
 
 <style>
-.item {
-  background-color: var(--white);
-  width: 30vw;
+.card {
+  background: transparent;
+  border: 2px solid #000;
+  width: 20vw;
   height: auto;
   margin-right: 10%;
   margin-bottom: 5vw;
+  text-align: center;
+  
 }
 
 .img {
@@ -36,9 +39,4 @@ export default {
     margin-right: 50%;
 }
 
-.btn {
-    margin-right: 100%;
-    height: 5vw;
-    width: 10vw;
-}
 </style>

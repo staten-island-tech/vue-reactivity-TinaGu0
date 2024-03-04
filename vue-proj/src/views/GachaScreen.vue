@@ -1,5 +1,5 @@
 <template>
-    <h2>Gamble away your life savings</h2>
+    <h1>Cards that you buy will appear here!</h1>
     <div class="parent">
         <MysteryBag v-for="(item, index) in items" :key="index" :item="item" :index="index" @remove="removeItem()" />
     </div>
@@ -38,5 +38,6 @@ body {
 .parent {
     display: flex;
     flex-flow: row wrap;
+    margin-left: 20%;
 }
 </style>
