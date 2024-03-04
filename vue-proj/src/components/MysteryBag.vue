@@ -10,11 +10,11 @@ export default {
     name: "MysteryBag", 
     props: {
         item: Object,
-        index: Number,
+        index: Number, 
     },
     methods: {
         remove() {
-            this.items.splice(index, 1);
+            this.$emit('remove', this.index); 
         }
     }
 }

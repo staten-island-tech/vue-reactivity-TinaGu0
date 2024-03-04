@@ -1,7 +1,7 @@
 <template>
     <h2>Gamble away your life savings</h2>
     <div class="parent">
-        <MysteryBag v-for="item in items" :key="index" :item="item" />
+        <MysteryBag v-for="(item, index) in items" :key="index" :item="item" :index="index" @remove="removeItem()" />
     </div>
 </template>
 
@@ -19,6 +19,11 @@ export default {
         return {
             items: reactive(items),
         };
+    },
+    methods: {
+        removeItem(index) {
+            this.items.splice(index, 1);
+        }
     }
 }
 </script>
