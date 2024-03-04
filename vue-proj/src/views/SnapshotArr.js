@@ -6,15 +6,15 @@ const snapshots = [
         cards: [
             {
                 cardName: "Reimu Endou",
-                cardImg: "",
+                cardImg: "/images/Reimu 1.png",
             },
             {
                 cardName: "Enna Alouette",
-                cardImg: "",
+                cardImg: "/images/Enna 1.png",
             },
             {
                 cardName: "Millie Parfait",
-                cardImg: "",
+                cardImg: "/images/Millie 1.png",
             }
         ],
     },
@@ -25,43 +25,43 @@ const snapshots = [
         cards: [
             {
                 cardName: "Pomu Rainpuff",
-                cardImg: "",
+                cardImg: "/images/pomu 2.png",
             },
             {
                 cardName: "Elira Pendora",
-                cardImg: "",
+                cardImg: "/images/elira 2 .png",
             },
             {
                 cardName: "Finana Ryugu",
-                cardImg: "",
+                cardImg: "/images/finana 2.png",
             },
             {
                 cardName: "Petra Gurin",
-                cardImg: "",
+                cardImg: "/images/petra 2.png",
             },
             {
                 cardName: "Selen Tatsuki",
-                cardImg: "",
+                cardImg: "/images/selen 2.png",
             },
             {
                 cardName: "Rosemi Lovelock",
-                cardImg: "",
+                cardImg: "/images/rosemi 2.png",
             },
             {
                 cardName: "Nina Kosaka",
-                cardImg: "",
+                cardImg: "/images/nina 2.png",
             },
             {
                 cardName: "Enna Alouette",
-                cardImg: "",
+                cardImg: "/images/enna 2.png",
             },
             {
                 cardName: "Millie Parfait",
-                cardImg: "",
+                cardImg: "/images/millie 2.png",
             },
             {
                 cardName: "Reimu Endou",
-                cardImg: "",
+                cardImg: "/images/reimu 2.png",
             },
         ],
     },
@@ -72,15 +72,15 @@ const snapshots = [
         cards: [
             {
                 cardName: "Pomu Rainpuff",
-                cardImg: "",
+                cardImg: "/images/pomu 3.png",
             },
             {
                 cardName: "Elira Pendora",
-                cardImg: "",
+                cardImg: "/images/elira 3.png",
             },
             {
                 cardName: "Finana Ryugu",
-                cardImg: "",
+                cardImg: "/images/finana 3.png",
             }
         ],
     },
@@ -91,27 +91,27 @@ const snapshots = [
         cards: [
             {
                 cardName: "Ren Zotto",
-                cardImg: "",
+                cardImg: "/images/ren 4.png",
             },
             {
                 cardName: "Scarle Yonaguni",
-                cardImg: "",
+                cardImg: "/images/scarle 4.png",
             },
             {
                 cardName: "Aster Arcadia",
-                cardImg: "",
+                cardImg: "/images/aster 4.png",
             },
             {
                 cardName: "Aia Amare",
-                cardImg: "",
+                cardImg: "/images/aia 4.png",
             },
             {
                 cardName: "Kyo Kaneko",
-                cardImg: "",
+                cardImg: "/images/kyo 4.png",
             },
             {
                 cardName: "Maria Marionette",
-                cardImg: "",
+                cardImg: "/images/maria 4.png",
             },
         ],
     },
@@ -122,23 +122,23 @@ const snapshots = [
         cards: [
             {
                 cardName: "Vox Akuma",
-                cardImg: "",
+                cardImg: "/images/vox 5.png",
             },
             {
                 cardName: "Mysta Rias",
-                cardImg: "",
+                cardImg: "/images/mysta 5.png",
             },
             {
                 cardName: "Luca Kaneshiro",
-                cardImg: "",
+                cardImg: "/images/luca 5.png",
             },
             {
                 cardName: "Ike Eveland",
-                cardImg: "",
+                cardImg: "/images/ike 5.png",
             },
             {
                 cardName: "Shu Yamino",
-                cardImg: "",
+                cardImg: "/images/shu 5.png",
             },
         ],
     },
