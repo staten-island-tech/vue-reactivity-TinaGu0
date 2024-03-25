@@ -1,13 +1,17 @@
 <template>
     <div class="card">
         <h3>{{ item.name }}</h3>
+        <OpenCard :item="item"/>
         <button @click="remove()">Refund</button>
     </div>
 </template>
 
 <script>
+import OpenCard from './OpenCard.vue'
+
 export default {
     name: "MysteryBag", 
+    components: { OpenCard },
     props: {
         item: Object,
         index: Number, 
