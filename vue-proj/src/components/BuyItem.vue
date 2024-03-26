@@ -24,7 +24,6 @@ export default {
     },
     methods: {
         add() {
-            console.log(this.snapshot.name);
             //let bought = snapshots.filter(item => item.name == this.snapshot.name)
             let boughtName = this.snapshot.name
             let boughtCards = this.snapshot.cards
