@@ -1,9 +1,12 @@
 <template>
-    <div class="card">
-        <h3>{{ item.name }}</h3>
-        <button @click="randomizer()">Open</button>
-        <button @click="remove()">Refund</button>
+    <div>
+        <div class="card">
+            <h3>{{ item.name }}</h3>
+            <button @click="randomizer()">Open</button>
+            <button @click="remove()">Refund</button>
+        </div>
     </div>
+    <div class="a"></div>
 </template>
 
 <script>
@@ -33,7 +36,12 @@ export default {
             })
             random.value = obj2
             console.log(random.value)
-            this.$emit('remove', this.index); //removes mysterybag card 
+            this.$emit('remove', this.index) //removes mysterybag card
+            let h = random.value.cardName
+            let stuff = document.querySelector(".a") 
+            stuff.insertAdjacentHTML('afterbegin', 
+            `<p>hi</p>`
+            )
         },
     }
 }
@@ -46,6 +54,11 @@ export default {
     margin-bottom: 3vw;
     padding-bottom: 10vw;
     width: 13vw;
+}
+
+.a {
+    background-color: aliceblue;
+    position: relative;
 }
 
 </style>
